@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#ffeef5, #e0f0ff);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* キャラクター表示エリア */
+.rabbit-area {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+/* ボディ画像 */
+.rabbit-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* リボン画像（上に重ねる） */
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* 非表示 */
+.hidden {
+    opacity: 0;
+}
+
+/* 操作パネル */
+.controls {
+    max-width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 2px solid #ffb3d1;
+    background: #fff0f5;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background: #ffb3d1;
+    color: white;
+}
+
+.reset {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    background: #ff9ec2;
+    color: white;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background: #ff4d4d;
+}

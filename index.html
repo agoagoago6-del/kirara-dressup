@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>モンリ着せ替え</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>モンリ着せ替えテスト</h1>
+<p>リボンをつけたり外したりしてみよう！</p>
+
+<div class="game-container">
+
+    <!-- キャラクター表示 -->
+    <div class="rabbit-area">
+
+        <!-- ボディ -->
+        <img src="images/body.png" class="rabbit-body">
+
+        <!-- リボン -->
+        <img src="images/ribbon.png" id="ribbon-img" class="ribbon hidden">
+
+    </div>
+
+    <!-- 操作パネル -->
+    <div class="controls">
+
+        <h2>リボン</h2>
+
+        <div class="options">
+
+            <button id="ribbon-on" class="option-btn">
+            リボンをつける
+            </button>
+
+            <button id="ribbon-off" class="option-btn">
+            リボンを外す
+            </button>
+
+        </div>
+
+        <button id="reset-btn" class="reset">
+        全部リセット
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
