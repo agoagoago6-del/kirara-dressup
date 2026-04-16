@@ -3,54 +3,86 @@
 
 <head>
 <meta charset="UTF-8">
-<title>モンリ着せ替え</title>
+<title>きせかえ練習</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
 </head>
+
 
 <body>
 
-<h1>モンリ着せ替えテスト</h1>
-<p>リボンをつけたり外したりしてみよう！</p>
+<h1 class="title">うさぎのきせかえ</h1>
 
-<div class="game-container">
 
-    <!-- キャラクター表示 -->
-    <div class="rabbit-area">
+<div class="character">
 
-        <!-- ボディ -->
-        <img src="images/body.png" class="rabbit-body">
-
-        <!-- リボン -->
-        <img src="images/ribbon.png" id="ribbon-img" class="ribbon hidden">
-
-    </div>
-
-    <!-- 操作パネル -->
-    <div class="controls">
-
-        <h2>リボン</h2>
-
-        <div class="options">
-
-            <button id="ribbon-on" class="option-btn">
-            リボンをつける
-            </button>
-
-            <button id="ribbon-off" class="option-btn">
-            リボンを外す
-            </button>
-
-        </div>
-
-        <button id="reset-btn" class="reset">
-        全部リセット
-        </button>
-
-    </div>
+<img id="body" src="images/body.png">
+<img id="dress">
+<img id="accessory">
+<img id="shoes">
+</div>
 
 </div>
+
+
+
+<!-- タブボタン -->
+
+<div class="tabs">
+
+<button onclick="showTab('dressTab')">ドレス</button>
+<button onclick="showTab('accessoryTab')">アクセ</button>
+<button onclick="showTab('shoesTab')">くつ</button>
+
+</div>
+
+
+
+<!-- インベントリ -->
+
+<div class="inventory">
+
+<!-- ドレス -->
+
+<div id="dressTab" class="tab">
+
+<img class="dressItem" src="images/dress1.png">
+<img class="dressItem" src="images/dress2.png">
+
+<img class="dressItem" src="images/dress4.png">
+<img class="dressItem" src="images/dress5.png">
+</div>
+
+
+<!-- アクセサリー -->
+
+<div id="accessoryTab" class="tab">
+
+<img class="accessoryItem" src="images/ribbon.png">
+
+<img class="accessoryItem" src="images/bag1.png">
+</div>
+
+
+<!-- くつ -->
+
+<div id="shoesTab" class="tab">
+
+<img class="shoesItem" src="images/shoes1.png">
+
+</div>
+
+</div>
+
+
 
 <script src="script.js"></script>
 
 </body>
+
 </html>

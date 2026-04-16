@@ -1,23 +1,65 @@
-document.addEventListener("DOMContentLoaded", function(){
+// ドレス着せ替え
 
-    const ribbon = document.getElementById("ribbon-img");
-    const ribbonOn = document.getElementById("ribbon-on");
-    const ribbonOff = document.getElementById("ribbon-off");
-    const reset = document.getElementById("reset-btn");
+const dress = document.getElementById("dress");
 
-    // リボンをつける
-    ribbonOn.addEventListener("click", function(){
-        ribbon.classList.remove("hidden");
-    });
+const items = document.querySelectorAll(".dressItem");
 
-    // リボンを外す
-    ribbonOff.addEventListener("click", function(){
-        ribbon.classList.add("hidden");
-    });
+items.forEach(function(item){
 
-    // リセット
-    reset.addEventListener("click", function(){
-        ribbon.classList.add("hidden");
-    });
+ item.addEventListener("click", function(){
+
+   dress.src = item.src;
+
+ });
 
 });
+
+
+
+// アイテム着せ替え
+
+const accessory = document.getElementById("accessory");
+
+const accessories = document.querySelectorAll(".accessoryItem");
+
+accessories.forEach(function(item){
+
+ item.addEventListener("click",function(){
+
+  accessory.src = item.src;
+
+ });
+
+});
+
+// 靴着せ替え
+
+const shoes = document.getElementById("shoes");
+
+const shoesItems = document.querySelectorAll(".shoesItem");
+
+shoesItems.forEach(function(item){
+
+ item.addEventListener("click",function(){
+
+  shoes.src = item.src;
+
+ });
+
+});
+
+// タブ切り替え
+
+function showTab(tabName){
+
+const tabs = document.querySelectorAll(".tab");
+
+tabs.forEach(function(tab){
+
+ tab.style.display = "none";
+
+});
+
+document.getElementById(tabName).style.display = "flex";
+
+}
